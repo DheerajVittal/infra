@@ -1,10 +1,11 @@
-# ZenPharma Dev Environment — managed via GitHub Actions for CICD
+# ZenPharma Dev Environment — managed via GitHub Actionss
 locals {
   project = "pharma"
   env     = "dev"
   region  = "us-east-1"
 }
 
+# Initial dev environment setup
 data "aws_caller_identity" "current" {}
 
 module "vpc" {

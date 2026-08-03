@@ -13,5 +13,17 @@ variable "jwt_secret" {
 variable "github_org" {
   description = "GitHub username or organization that owns frontend and backend"
   type        = string
-  default     = "dheerajvittal"
+  default     = "DheerajVittal"
+}
+
+variable "github_org_id" {
+  default = "DheerajVittal"          # ← from /orgs/<org> or /users/<user>
+}
+
+variable "github_repo_ids" {
+  default = {
+    "zen-pharma-frontend"     = "YOUR_FRONTEND_REPO_ID"
+    "zen-pharma-backend"      = "YOUR_BACKEND_REPO_ID"
+    "zen-pharma-backend-lab1" = "YOUR_BACKEND_LAB1_REPO_ID"
+  }
 }
